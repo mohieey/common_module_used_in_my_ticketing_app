@@ -20,5 +20,11 @@ export * from "./events/ticketUpdatedEvent";
 export * from "./events/orderCreatedEvent";
 export * from "./events/orderCancelledEvent";
 
-export * from "./events/types/orderStatus";
-//
+// export * from "./events/types/orderStatus";
+
+export enum OrderStatus {
+  Created = "created",
+  Cancelled = "cancelled",
+  AwaitingPayment = "awaiting:payment",
+  Complete = "complete",
+}
